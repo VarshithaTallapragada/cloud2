@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/hello')
 def hello():
     # Renders an index.html file located in the 'templates' folder
     return render_template('index.html')
